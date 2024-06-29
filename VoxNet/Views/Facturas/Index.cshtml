@@ -1,0 +1,83 @@
+﻿@model IEnumerable<VoxNet.Models.Facturas>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaFactura)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MetodoPagoFactura)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImpuestosFactura)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalFactura)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CantidadFactura)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdSucursal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCliente)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdEmpleado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdTipoComprobante)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaFactura)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MetodoPagoFactura)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImpuestosFactura)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalFactura)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CantidadFactura)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdSucursal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCliente)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdEmpleado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdTipoComprobante)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdFactura">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IdFactura">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdFactura">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
