@@ -66,6 +66,6 @@ Contributions are welcome! Please fork this repository and submit a pull request
 
 ### Acknowledgements
 
-- Professor [CARLOS RAFAEL MENDEZ COMAS], for guidance and support throughout the course.
-- [INTEC], for providing the resources to complete this project.
+- Professor CARLOS RAFAEL MENDEZ COMAS, for guidance and support throughout the course.
+- INTEC, for providing the resources to complete this project.
 
